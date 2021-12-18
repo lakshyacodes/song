@@ -16,7 +16,7 @@ video_url="https://www.youtube.com/watch?v="+video
 # url input from user
 yt = YouTube(video_url)
 video = yt.streams.filter(only_audio=True).first()
-destination = "../storage/music"
+destination = "../storage/downloads/"
 out_file = video.download(output_path=destination)
 base, ext = os.path.splitext(out_file)
 new_file = base + '.mp3'
