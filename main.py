@@ -2,7 +2,7 @@ from pytube import YouTube
 import os
 import urllib.request
 import re
-print("Enter artist name!(without white space)")
+print("Enter artist name!(optional)")
 artist_name=input(">> ")
 print("Enter song/track name!")
 song_name=input(">> ")
@@ -21,4 +21,4 @@ out_file = video.download(output_path=destination)
 base, ext = os.path.splitext(out_file)
 new_file = base + '.mp3'
 os.rename(out_file, new_file)
-print(yt.title + " has been successfully downloaded.")
+print(yt.title + " has been successfully downloaded in your downloads folder. :)")
